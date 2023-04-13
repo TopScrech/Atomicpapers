@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F30C344D29C25F3B006E75CE /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C344C29C25F3B006E75CE /* ImageView.swift */; };
+		F30C344F29C26038006E75CE /* RootContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C344E29C26038006E75CE /* RootContainer.swift */; };
+		F30C345129C2605C006E75CE /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C345029C2605C006E75CE /* UserSettings.swift */; };
+		F30C345429C260A6006E75CE /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C345329C260A6006E75CE /* Navigation.swift */; };
+		F3BF1D1F29C2827200DFFA3F /* Image Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF1D1E29C2827200DFFA3F /* Image Saver.swift */; };
+		F3BF1D2229C324E000DFFA3F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF1D2129C324E000DFFA3F /* Filter.swift */; };
+		F3BF1D2429C35A1F00DFFA3F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF1D2329C35A1F00DFFA3F /* Settings.swift */; };
+		F3BF1D2729C39E6600DFFA3F /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = F3BF1D2629C39E6600DFFA3F /* WaterfallGrid */; };
+		F3BF1D2929C47C4D00DFFA3F /* Image Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF1D2829C47C4D00DFFA3F /* Image Loader.swift */; };
+		F3BF1D3729C5D8DE00DFFA3F /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3BF1D3629C5D8DE00DFFA3F /* MailCover */; };
+		F3D7D88429E896D900BCAFFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F3D7D88329E896D900BCAFFE /* Kingfisher */; };
+		F3D7D88729E8A91700BCAFFE /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3D7D88629E8A91700BCAFFE /* SafariCover */; };
+		F3E3A0A829C1EA7D00840F6D /* AtomicpapersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0A729C1EA7D00840F6D /* AtomicpapersApp.swift */; };
+		F3E3A0AA29C1EA7D00840F6D /* WaterfallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0A929C1EA7D00840F6D /* WaterfallList.swift */; };
+		F3E3A0AC29C1EA7E00840F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E3A0AB29C1EA7E00840F6D /* Assets.xcassets */; };
+		F3E3A0B729C1F3BA00840F6D /* AtomicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0B629C1F3BA00840F6D /* AtomicImage.swift */; };
+		F3E3A0B929C1F3D600840F6D /* getUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0B829C1F3D600840F6D /* getUrl.swift */; };
+		F3E3A0BC29C1FADD00840F6D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E3A0BB29C1FADD00840F6D /* ScrechKit */; };
+		F3E3A0BE29C1FD2800840F6D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0BD29C1FD2800840F6D /* Model.swift */; };
+		F3E3A0C029C1FD7C00840F6D /* RootVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0BF29C1FD7C00840F6D /* RootVM.swift */; };
+		F3E3A0C229C1FE7300840F6D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3A0C129C1FE7300840F6D /* RootView.swift */; };
+		F3F09EF329C84F220008D130 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F09EF229C84F220008D130 /* Discover.swift */; };
+		F3F09EF929C852B20008D130 /* DiscoverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F09EF829C852B20008D130 /* DiscoverCard.swift */; };
+		F3F09EFB29C853300008D130 /* Discover Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F09EFA29C853300008D130 /* Discover Model.swift */; };
+		F3F3330229C85BEA0085AA41 /* DiscoverQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F3330129C85BEA0085AA41 /* DiscoverQR.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F30C344C29C25F3B006E75CE /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F30C344E29C26038006E75CE /* RootContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainer.swift; sourceTree = "<group>"; };
+		F30C345029C2605C006E75CE /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		F30C345329C260A6006E75CE /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		F3BF1D1E29C2827200DFFA3F /* Image Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Saver.swift"; sourceTree = "<group>"; };
+		F3BF1D2029C31A8D00DFFA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3BF1D2129C324E000DFFA3F /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		F3BF1D2329C35A1F00DFFA3F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F3BF1D2829C47C4D00DFFA3F /* Image Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Loader.swift"; sourceTree = "<group>"; };
+		F3E3A0A429C1EA7D00840F6D /* Atomicpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atomicpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E3A0A729C1EA7D00840F6D /* AtomicpapersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicpapersApp.swift; sourceTree = "<group>"; };
+		F3E3A0A929C1EA7D00840F6D /* WaterfallList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallList.swift; sourceTree = "<group>"; };
+		F3E3A0AB29C1EA7E00840F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E3A0B529C1EE7400840F6D /* Atomicpapers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Atomicpapers.entitlements; sourceTree = "<group>"; };
+		F3E3A0B629C1F3BA00840F6D /* AtomicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicImage.swift; sourceTree = "<group>"; };
+		F3E3A0B829C1F3D600840F6D /* getUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getUrl.swift; sourceTree = "<group>"; };
+		F3E3A0BD29C1FD2800840F6D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F3E3A0BF29C1FD7C00840F6D /* RootVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVM.swift; sourceTree = "<group>"; };
+		F3E3A0C129C1FE7300840F6D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F3F09EF229C84F220008D130 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		F3F09EF829C852B20008D130 /* DiscoverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCard.swift; sourceTree = "<group>"; };
+		F3F09EFA29C853300008D130 /* Discover Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Discover Model.swift"; sourceTree = "<group>"; };
+		F3F3330129C85BEA0085AA41 /* DiscoverQR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverQR.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3E3A0A129C1EA7D00840F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D7D88429E896D900BCAFFE /* Kingfisher in Frameworks */,
+				F3E3A0BC29C1FADD00840F6D /* ScrechKit in Frameworks */,
+				F3D7D88729E8A91700BCAFFE /* SafariCover in Frameworks */,
+				F3BF1D3729C5D8DE00DFFA3F /* MailCover in Frameworks */,
+				F3BF1D2729C39E6600DFFA3F /* WaterfallGrid in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F30C345229C26072006E75CE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3A0A729C1EA7D00840F6D /* AtomicpapersApp.swift */,
+				F30C345329C260A6006E75CE /* Navigation.swift */,
+				F30C344E29C26038006E75CE /* RootContainer.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F3BF1D2A29C518E300DFFA3F /* Root View */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3A0C129C1FE7300840F6D /* RootView.swift */,
+				F3E3A0BF29C1FD7C00840F6D /* RootVM.swift */,
+			);
+			path = "Root View";
+			sourceTree = "<group>";
+		};
+		F3BF1D2B29C5195B00DFFA3F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF1D2329C35A1F00DFFA3F /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F3BF1D2C29C5AE6500DFFA3F /* Image List */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3A0A929C1EA7D00840F6D /* WaterfallList.swift */,
+				F3E3A0B629C1F3BA00840F6D /* AtomicImage.swift */,
+			);
+			path = "Image List";
+			sourceTree = "<group>";
+		};
+		F3BF1D2D29C5AE6900DFFA3F /* Image View */ = {
+			isa = PBXGroup;
+			children = (
+				F30C344C29C25F3B006E75CE /* ImageView.swift */,
+			);
+			path = "Image View";
+			sourceTree = "<group>";
+		};
+		F3E3A09B29C1EA7D00840F6D = {
+			isa = PBXGroup;
+			children = (
+				F3E3A0A629C1EA7D00840F6D /* Atomicpapers */,
+				F3E3A0A529C1EA7D00840F6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3E3A0A529C1EA7D00840F6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3A0A429C1EA7D00840F6D /* Atomicpapers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E3A0A629C1EA7D00840F6D /* Atomicpapers */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF1D2029C31A8D00DFFA3F /* Info.plist */,
+				F3E3A0B529C1EE7400840F6D /* Atomicpapers.entitlements */,
+				F30C345029C2605C006E75CE /* UserSettings.swift */,
+				F3E3A0BD29C1FD2800840F6D /* Model.swift */,
+				F3E3A0B829C1F3D600840F6D /* getUrl.swift */,
+				F3BF1D2829C47C4D00DFFA3F /* Image Loader.swift */,
+				F3BF1D1E29C2827200DFFA3F /* Image Saver.swift */,
+				F3BF1D2129C324E000DFFA3F /* Filter.swift */,
+				F30C345229C26072006E75CE /* Navigation */,
+				F3BF1D2A29C518E300DFFA3F /* Root View */,
+				F3BF1D2C29C5AE6500DFFA3F /* Image List */,
+				F3BF1D2D29C5AE6900DFFA3F /* Image View */,
+				F3BF1D2B29C5195B00DFFA3F /* Settings */,
+				F3F09EF429C84F330008D130 /* Discover */,
+				F3E3A0AB29C1EA7E00840F6D /* Assets.xcassets */,
+			);
+			path = Atomicpapers;
+			sourceTree = "<group>";
+		};
+		F3F09EF429C84F330008D130 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F3F09EF229C84F220008D130 /* Discover.swift */,
+				F3F09EF829C852B20008D130 /* DiscoverCard.swift */,
+				F3F3330129C85BEA0085AA41 /* DiscoverQR.swift */,
+				F3F09EFA29C853300008D130 /* Discover Model.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3E3A0A329C1EA7D00840F6D /* Atomicpapers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E3A0B229C1EA7E00840F6D /* Build configuration list for PBXNativeTarget "Atomicpapers" */;
+			buildPhases = (
+				F3E3A0A029C1EA7D00840F6D /* Sources */,
+				F3E3A0A129C1EA7D00840F6D /* Frameworks */,
+				F3E3A0A229C1EA7D00840F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Atomicpapers;
+			packageProductDependencies = (
+				F3E3A0BB29C1FADD00840F6D /* ScrechKit */,
+				F3BF1D2629C39E6600DFFA3F /* WaterfallGrid */,
+				F3BF1D3629C5D8DE00DFFA3F /* MailCover */,
+				F3D7D88329E896D900BCAFFE /* Kingfisher */,
+				F3D7D88629E8A91700BCAFFE /* SafariCover */,
+			);
+			productName = Atomicpapers;
+			productReference = F3E3A0A429C1EA7D00840F6D /* Atomicpapers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3E3A09C29C1EA7D00840F6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F3E3A0A329C1EA7D00840F6D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F3E3A09F29C1EA7D00840F6D /* Build configuration list for PBXProject "Atomicpapers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3E3A09B29C1EA7D00840F6D;
+			packageReferences = (
+				F3E3A0BA29C1FADD00840F6D /* XCRemoteSwiftPackageReference "ScrechKit" */,
+				F3BF1D2529C39E6600DFFA3F /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				F3BF1D3529C5D8DE00DFFA3F /* XCRemoteSwiftPackageReference "MailCover" */,
+				F3D7D88229E896D900BCAFFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F3D7D88529E8A91700BCAFFE /* XCRemoteSwiftPackageReference "SafariCover" */,
+			);
+			productRefGroup = F3E3A0A529C1EA7D00840F6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3E3A0A329C1EA7D00840F6D /* Atomicpapers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3E3A0A229C1EA7D00840F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E3A0AC29C1EA7E00840F6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E3A0A029C1EA7D00840F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E3A0C029C1FD7C00840F6D /* RootVM.swift in Sources */,
+				F3E3A0BE29C1FD2800840F6D /* Model.swift in Sources */,
+				F3E3A0AA29C1EA7D00840F6D /* WaterfallList.swift in Sources */,
+				F3E3A0C229C1FE7300840F6D /* RootView.swift in Sources */,
+				F3E3A0A829C1EA7D00840F6D /* AtomicpapersApp.swift in Sources */,
+				F30C344D29C25F3B006E75CE /* ImageView.swift in Sources */,
+				F3BF1D2929C47C4D00DFFA3F /* Image Loader.swift in Sources */,
+				F3BF1D2229C324E000DFFA3F /* Filter.swift in Sources */,
+				F3F09EF329C84F220008D130 /* Discover.swift in Sources */,
+				F30C344F29C26038006E75CE /* RootContainer.swift in Sources */,
+				F3F09EF929C852B20008D130 /* DiscoverCard.swift in Sources */,
+				F3BF1D2429C35A1F00DFFA3F /* Settings.swift in Sources */,
+				F3E3A0B929C1F3D600840F6D /* getUrl.swift in Sources */,
+				F3E3A0B729C1F3BA00840F6D /* AtomicImage.swift in Sources */,
+				F3BF1D1F29C2827200DFFA3F /* Image Saver.swift in Sources */,
+				F3F09EFB29C853300008D130 /* Discover Model.swift in Sources */,
+				F30C345129C2605C006E75CE /* UserSettings.swift in Sources */,
+				F3F3330229C85BEA0085AA41 /* DiscoverQR.swift in Sources */,
+				F30C345429C260A6006E75CE /* Navigation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3E3A0B029C1EA7E00840F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3E3A0B129C1EA7E00840F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3E3A0B329C1EA7E00840F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Atomicpapers/Atomicpapers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Atomicpapers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Atomicpapers;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Access to your photo library is required to save wallpapers, so you can set them as your device's background.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Atomicpapers-debug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3E3A0B429C1EA7E00840F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Atomicpapers/Atomicpapers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Atomicpapers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Atomicpapers;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Access to your photo library is required to save wallpapers, so you can set them as your device's background.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Atomicpapers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3E3A09F29C1EA7D00840F6D /* Build configuration list for PBXProject "Atomicpapers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E3A0B029C1EA7E00840F6D /* Debug */,
+				F3E3A0B129C1EA7E00840F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E3A0B229C1EA7E00840F6D /* Build configuration list for PBXNativeTarget "Atomicpapers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E3A0B329C1EA7E00840F6D /* Debug */,
+				F3E3A0B429C1EA7E00840F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3BF1D2529C39E6600DFFA3F /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F3BF1D3529C5D8DE00DFFA3F /* XCRemoteSwiftPackageReference "MailCover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/MailCover";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F3D7D88229E896D900BCAFFE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.6.0;
+			};
+		};
+		F3D7D88529E8A91700BCAFFE /* XCRemoteSwiftPackageReference "SafariCover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/SafariCover";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F3E3A0BA29C1FADD00840F6D /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3BF1D2629C39E6600DFFA3F /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BF1D2529C39E6600DFFA3F /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
+		F3BF1D3629C5D8DE00DFFA3F /* MailCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BF1D3529C5D8DE00DFFA3F /* XCRemoteSwiftPackageReference "MailCover" */;
+			productName = MailCover;
+		};
+		F3D7D88329E896D900BCAFFE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3D7D88229E896D900BCAFFE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F3D7D88629E8A91700BCAFFE /* SafariCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3D7D88529E8A91700BCAFFE /* XCRemoteSwiftPackageReference "SafariCover" */;
+			productName = SafariCover;
+		};
+		F3E3A0BB29C1FADD00840F6D /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E3A0BA29C1FADD00840F6D /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F3E3A09C29C1EA7D00840F6D /* Project object */;
+}
