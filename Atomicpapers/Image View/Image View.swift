@@ -35,17 +35,17 @@ struct ImageView: View {
                     VStack {
                         Text("Size" + ": " + imageLoader.size)
                         
-                        Text("Resolution: \(Int(imageLoader.dimensions.width)) x \(Int(imageLoader.dimensions.height))".replacingOccurrences(of: ",", with: ""))
+                        Text("Resolution: \(imageLoader.dimensions.width) x \(imageLoader.dimensions.height)".replacingOccurrences(of: ",", with: ""))
                     }
                     .font(.system(.headline, design: .rounded))
-                    .redacted(reason: imageLoader.isLoaded ? [] : .placeholder)
+                    .redacted(imageLoader.isLoaded)
                     
                     Spacer()
                     
                     Button {
                         if let inputImage = imageLoader.image {
                             let imageSaver = ImageSaver()
-                            imageSaver.writeToPhotoAlbum(image: inputImage)
+                            imageSaver.writeToPhotoAlbum(inputImage)
                         }
                         
                         var imageToUpdate = image
@@ -75,7 +75,7 @@ struct ImageView: View {
             }
         }
         .ignoresSafeArea()
-        .task { imageLoader.loadImage(from: getUrl(image.name, false)) }
+        .task { imageLoader.loadImage(getUrl(image.name, false)) }
     }
     
     private func updateDownloads(_ image: AtomicPaper, update: whatToUpdate = .downloads) {
@@ -91,8 +91,8 @@ struct ImageView: View {
     private func loadImageFromCache() {
         KingfisherManager.shared.cache.retrieveImage(forKey: image.name) { result in
             switch result {
-            case .success(let imageResult):
-                self.cachedImage = imageResult.image
+            case .success(let result):
+                self.cachedImage = result.image
                 
             case .failure: break
             }

@@ -3,6 +3,12 @@ import SwiftUI
 struct DiscoverCard: View {
     let icon, name, urlString: String
     
+    init(_ icon: String, name: String, urlString: String) {
+        self.icon = icon
+        self.name = name
+        self.urlString = urlString
+    }
+    
     @State private var presentQRCode: Bool = false
     
     var body: some View {

@@ -1,4 +1,5 @@
 {
+  "originHash" : "fb054fca4a7b274bb3957e062ac36be57bc5cd21a8fb8943de8edad312fca9ff",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -15,7 +16,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "532dbe2c626b94029b5bbae42d713530106c52f4"
+        "revision" : "29f4e2a45338335e393ef671b185def38f4c9b9f"
       }
     },
     {
@@ -24,7 +25,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "e330eebdfa580df6bfe050662c4825cf5e92cd21"
+        "revision" : "0a5cf4d1a91e5151608bdba892d64ae9c501b37f"
       }
     },
     {
@@ -33,7 +34,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "93ddbff9d4074987493c2996ada75328bc0a913a"
+        "revision" : "98e9ff5d9cc163d3567607e26a2fc44426a2ac2b"
       }
     },
     {
@@ -46,5 +47,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

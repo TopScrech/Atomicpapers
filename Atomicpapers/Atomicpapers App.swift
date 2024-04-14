@@ -1,6 +1,5 @@
-import SwiftUI
-import SafariCover
 import ScrechKit
+import SafariCover
 
 @main
 struct AtomicpapersApp: App {

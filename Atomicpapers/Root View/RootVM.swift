@@ -2,14 +2,7 @@ import ScrechKit
 import CloudKit
 
 class RootVM: ObservableObject {
-    private var db = CKContainer.default().publicCloudDatabase
-    
-    @Published var hideStats: Bool = true
-    @Published var filterOption: Categories = .all
-    @Published var errorWrapper: ErrorWrapper?
     @Published var imageDictionary: [CKRecord.ID: AtomicPaper] = [:]
-    
-    @Published var objectToUpdateDownloads: AtomicPaper?
     
     var filteredImages: [AtomicPaper] {
         return filterImage(by: filterOption)
@@ -19,23 +12,47 @@ class RootVM: ObservableObject {
         imageDictionary.values.compactMap { $0 }
     }
     
-    func refreshImages() async {
-        main {
-            self.imageDictionary.removeAll()
+    private var db = CKContainer.default().publicCloudDatabase
+    
+    @Published var hideStats: Bool = true
+    @AppStorage("filterOption") var filterOption: Categories = .all
+    @Published var errorWrapper: ErrorWrapper?
+    
+    @Published var objectToUpdateDownloads: AtomicPaper?
+    
+    func applyFilter(_ option: Categories) {
+        hideStats = true
+        filterOption = option
+        Task {
+            await refreshImages()
         }
+        delay(1.5) {
+            self.hideStats = false
+        }
+    }
+    
+    func loadImages() async {
         do {
             try await populateImages()
-            sortImagesByViews()
+        } catch {
+            print("Error loading images: \(error)")
+        }
+    }
+    
+    func refreshImages() async {
+        do {
+            try await populateImages()
+//            sortImagesByViews()
         } catch {
             print("Error refreshing images:", error)
         }
     }
     
-    func sortImagesByViews() {
-        main {
-            self.imageDictionary = self.imageDictionary.sorted { $0.value.views > $1.value.views }.reduce(into: [:]) { $0[$1.0] = $1.1 }
-        }
-    }
+//    func sortImagesByViews() {
+//        main {
+//            self.imageDictionary = self.imageDictionary.sorted { $0.value.views > $1.value.views }.reduce(into: [:]) { $0[$1.0] = $1.1 }
+//        }
+//    }
     
     func populateImages() async throws {
         let query = CKQuery(recordType: ImageRecordKeys.type.rawValue, predicate: NSPredicate(value: true))
@@ -46,26 +63,35 @@ class RootVM: ObservableObject {
             try? $0.1.get()
         }
         
-        records.forEach { record in
+        let atomicPapers = records.compactMap { AtomicPaper(record: $0) }
+        
+        let sortedAtomicPapers = atomicPapers.sorted { atomicPaper1, atomicPaper2 in
+            atomicPaper1.views > atomicPaper2.views
+        }
+        
+        sortedAtomicPapers.forEach { atomicPaper in
             main {
-                self.imageDictionary[record.recordID] = AtomicPaper(record: record)
+                self.imageDictionary[atomicPaper.recordId!] = atomicPaper
             }
         }
     }
-    
+
     func filterImage(by filterOption: Categories) -> [AtomicPaper] {
         switch filterOption {
         case .all:
             return images
             
         case .twin:
-            return images.filter({ $0.name.contains("twin") && !$0.name.contains("twins") })
+            return images.filter { $0.name.contains("twin") && !$0.name.contains("twins") }
             
         case .zina:
-            return images.filter({ $0.name.contains("zina") })
+            return images.filter { $0.name.contains("zina") }
+            
+        case .nechaev:
+            return images.filter { $0.name.contains("nechaev") }
             
         default:
-            return images.filter({ $0.name.contains(filterOption.displayName.lowercased()) })
+            return images.filter { $0.name.contains(filterOption.displayName.lowercased()) }
         }
     }
     
@@ -91,7 +117,7 @@ class RootVM: ObservableObject {
                 record[key] = value
                 
                 try await db.save(record)
-                main { self.sortImagesByViews() }
+//                main { self.sortImagesByViews() }
             } catch {
                 print(error)
                 main {

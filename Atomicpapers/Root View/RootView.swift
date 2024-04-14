@@ -6,7 +6,7 @@ struct RootView: View {
     @State private var sheetSettings: Bool = false
     
     var body: some View {
-        WaterfallList(vm.images)
+        WaterfallList(vm.filteredImages)
             .environmentObject(vm)
             .sheet(isPresented: $sheetSettings) { Settings() }
             .toolbar {

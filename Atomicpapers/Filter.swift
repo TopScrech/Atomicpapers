@@ -1,22 +1,14 @@
-import SwiftUI
 import ScrechKit
 
 struct Filter: View {
     @EnvironmentObject private var vm: RootVM
-    
-    func applyFilter(option: Categories) {
-        vm.hideStats = true
-        vm.filterOption = option
-        Task { await vm.refreshImages() }
-        //delay(1.5) { vm.hideStats = false }
-    }
     
     var body: some View {
         HStack {
             Menu {
                 ForEach(Categories.allCases) { option in
                     Button(option.displayName) {
-                        applyFilter(option: option)
+                        vm.applyFilter(option)
                     }
                     .tag(option)
                     
@@ -31,17 +23,20 @@ struct Filter: View {
                 .title3()
                 .foregroundColor(.white)
                 .padding(10)
+#error("Conflict between ScrechKit and SwiftUI")
                 .background(Capsule().fill(.blue))
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
                 .frame(width: 160)
             }
             
+#if DEBUG
             Button {
                 Task { await vm.refreshImages() }
             } label: {
-                Text("Refresh")
+                Text("Debug Refresh")
             }
+#endif
         }
         .padding(.bottom, 5)
     }

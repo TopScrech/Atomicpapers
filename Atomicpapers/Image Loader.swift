@@ -1,4 +1,3 @@
-import SwiftUI
 import ScrechKit
 import Combine
 
@@ -10,12 +9,12 @@ class ImageLoader: ObservableObject {
     
     private var cancellable: AnyCancellable?
     
-    func loadImage(from url: URL) {
+    func loadImage(_ url: URL) {
         cancellable = URLSession.shared.dataTaskPublisher(for: url)
             .map(\.data)
             .receive(on: DispatchQueue.main)
-            .sink { completion in
-                switch completion {
+            .sink { result in
+                switch result {
                 case .failure(let error):
                     print("Error downloading image: \(error.localizedDescription)")
                 case .finished:
@@ -25,8 +24,9 @@ class ImageLoader: ObservableObject {
                 if let downloadedImage = UIImage(data: data) {
                     main {
                         self.image = downloadedImage
+                        
                         withAnimation {
-                            self.size = formatBytes(data.count, countStyle: .file)
+                            self.size = formatBytes(data.count)
                             self.dimensions = downloadedImage.size
                             self.isLoaded = true
                         }

@@ -14,7 +14,7 @@ struct Settings: View {
                 presentMailCover = true
             }
         }
-        .mailCover(isPresented: $presentMailCover, message: "Take a look on these images!\n", subject: "New pictures for Atomicpapers", recipients: ["sergei_saliukov@icloud.com"], ccRecipients: ["example@mail.com"], bccRecipients: ["example@mail.ru"], alerts: .disabled)
+        .mailCover($presentMailCover, message: "Take a look on these images!\n", subject: "New pictures for Atomicpapers", recipients: ["sergei_saliukov@icloud.com"], ccRecipients: ["example@mail.com"], bccRecipients: ["example@mail.ru"], alerts: .disabled)
     }
 }
 
